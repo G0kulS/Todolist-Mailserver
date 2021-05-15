@@ -76,10 +76,10 @@ else
 
 console.log("task time :",month,date,hour,min);
       
-let rangem = month ; 
-let ranged = date ; 
-let rangeh = hour ; 
-let rangemin = min ; 
+let rangem = currentmonth ; 
+let ranged = currentdate ; 
+let rangeh = currenthour ; 
+let rangemin = currentmin ; 
 
 if(rangemin+10>=60)
 {

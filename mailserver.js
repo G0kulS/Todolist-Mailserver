@@ -111,7 +111,7 @@ console.log(rangem,ranged,rangeh,rangemin);
                 from: 'unnamedbot2oo5@gmail.com', // Sender address
                 to: user[0].email,         // List of recipients
                 subject: `Remainder for task-${i.Taskname}`, // Subject line
-                text: `Hello ${user[0].Name}, \n\n It's about time to start ${i.Taskname}. \n\n Use the  link below to registry the task completion or to cancel the task: \n\n http://localhost:3000/remainder/${i._id}` // Plain text body
+                text: `Hello ${user[0].Name}, \n\n It's about time to start ${i.Taskname}. \n\n Use the  link below to registry the task completion or to cancel the task: \n\n https://sleepy-bell-1ecd40.netlify.app/remainder/${i._id}` // Plain text body
             };
             transporter.sendMail(message, function(err, info) {
                 if (err) {

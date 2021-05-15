@@ -14,12 +14,17 @@ let transporter = nodemailer.createTransport({
       refreshToken: "1//04G8mQC7d3f__CgYIARAAGAQSNwF-L9IrGw9gIdFyuu2eYDTn31CRzMilorT-naE3CnTym01uljmn1KzorgzVuz51G-UZXf1-bWQ"
     }
   });
- 
+
+  let date = new Date();
+  let hour = date.getHours();
+  let min = date.getMinutes();
+
+
 const message = {
                 from: 'unnamedbot2oo5@gmail.com', // Sender address
                 to: "samigokul474@gmail.com",         // List of recipients
                 subject: `Remainder for task`, // Subject line
-                text: `Hello \n\n It's time to start. \n\n Use the  link below to registry the task completion or to cancel the task: \n\n http://localhost:3000/remainder/` // Plain text body
+                text: `Hello \n\n It's time to start ${hour}-${min}. \n\n Use the  link below to registry the task completion or to cancel the task: \n\n http://localhost:3000/remainder/` // Plain text body
             };
 
             transporter.sendMail(message, function(err, info) {

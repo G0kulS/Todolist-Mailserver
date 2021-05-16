@@ -8,10 +8,11 @@ let transporter = nodemailer.createTransport({
   auth: {
     type: 'OAuth2',
     user: "unnamedbot2oo5@gmail.com",
-    pass: process.env.GMAIL_PASSWORD,
-    clientId: process.env.GMAIL_CLIENTID,
-    clientSecret: process.env.GMAIL_CLIENTSECRET,
-    refreshToken: process.env.GMAIL_REFRESHTOKEN
+    pass: "Liverpool@2019",
+    clientId: "1038463972918-tlu739mbpl08tah8e8p3uq5to2kvh2mq.apps.googleusercontent.com",
+    clientSecret: "WCAEDI34AoGnMTukh4RZ__wB",
+    refreshToken: "1//04G8mQC7d3f__CgYIARAAGAQSNwF-L9IrGw9gIdFyuu2eYDTn31CRzMilorT-naE3CnTym01uljmn1KzorgzVuz51G-UZXf1-bWQ"
+  
   }
 });
 process.env.GMAIL_PASSWORD
@@ -111,7 +112,7 @@ console.log(rangem,ranged,rangeh,rangemin);
                 from: 'unnamedbot2oo5@gmail.com', // Sender address
                 to: user[0].email,         // List of recipients
                 subject: `Remainder for task-${i.Taskname}`, // Subject line
-                text: `Hello ${user[0].Name}, \n\n It's about time to start ${i.Taskname}. \n\n Use the  link below to registry the task completion or to cancel the task: \n\n https://goofy-darwin-118839.netlify.app/remainder/${i._id}` // Plain text body
+                text: `Hello ${user[0].Name}, \n\n It's about time to start ${i.Taskname}. \n\n Use the  link below to registry the task completion or to cancel the task: \n\n https://objective-goodall-0f6a6a.netlify.app/remainder/${i._id}` // Plain text body
             };
             transporter.sendMail(message, function(err, info) {
                 if (err) {

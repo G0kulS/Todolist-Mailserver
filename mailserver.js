@@ -15,7 +15,7 @@ let transporter = nodemailer.createTransport({
   
   }
 });
-process.env.GMAIL_PASSWORD
+
   
  (async() => {
     let connection = await mongodb.connect(URL);

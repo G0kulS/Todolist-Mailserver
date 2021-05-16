@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 const mongodb = require("mongodb");
 const URL = "mongodb+srv://dbuser:helloworld@cluster0.zwvcb.mongodb.net/Remainder?retryWrites=true&w=majority";
 const DB = "Remainder";
-require('dotenv').config();
+
 let transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
